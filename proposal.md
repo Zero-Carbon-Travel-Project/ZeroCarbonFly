@@ -14,7 +14,7 @@ The US has pledged to achieve carbon neutrality by 2050, with a 2030 emissions t
 
 According to the U.S. Greenhouse Gas Emissions and Sinks report by EPA, the primary source of greenhouse gas emissions in the United States is Transportation, which composed 29 percent of 2019 greenhouse gas emissions(see Figure 1). These Greenhouse gas emissions are from transportation primarily come from burning fossil fuel for our cars, trucks, ships, trains, and planes. Over 90 percent of the fuel used for transportation is petroleum based, which includes primarily gasoline and diesel.
 
-![image-20211102234006027](C:\Users\I\Database\project\proposal.assets\image-20211102234006027.png)
+![image-20211102234006027](proposal.assets/image-20211102234006027.png)
 
 
 
@@ -22,11 +22,11 @@ Figure 1. Total U.S. Greenhouse Gas Emissions by Economic Sectors in 2019 (Sourc
 
 Among all the travel patterns, air travel is the fastest-growing source of carbon emissions and emits the largest greenhouse gas. When a user travels between cities, flying is often the cheapest option for journeys. However, the main reason is that the negative impact on the environment was not included in the price users have paid. Air fuel isn't taxed on its environmental externality at all. If the costs of environmental damage were reflected in flight ticket prices through effective carbon pricing, it would make other travel patterns, such as buses and trains, look a whole lot more attractive (Deutsche Welle, 2021). Additionally, **air travelers said they are willing to pay more for carbon-neutral tickets** with fliers aged 18 to 34 willing to pay the most, according to Mckinsey & Company’s research.
 
-![image-20211102234117664](C:\Users\I\Database\project\proposal.assets\image-20211102234117664.png)
+![image-20211102234117664](proposal.assets/image-20211102234117664.png)
 
 Figure 2. Greenhouse Gas Emissions among travel patterns (Source: DW, 2021)
 
-![image-20211102234146095](C:\Users\I\Database\project\proposal.assets\image-20211102234146095.png)
+![image-20211102234146095](proposal.assets/image-20211102234146095.png)
 
 Figure 3. The survey output of willing to pay for carbon-neutral flight (Source: Mckinsey & Company’s, 2020)
 
@@ -42,14 +42,14 @@ Table 1. User stories
 
 | User type      | Name    |                                                              | User Story                                                   |
 | -------------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Traveler       | Kelly   | ![image-20211102234422543](C:\Users\I\Database\project\proposal.assets\image-20211102234422543.png) | Kelly loves to travel around among U.S. cites. She cares about  climate change and she thinks travel pattern choices are the most effective  way to strive for a net-carbon zero world. She wants to check the date,  price, best choice, and see which flights would emit less amount of carbon.  Kelly is willing to pay some money for offsetting carbon and wants a safe and  secure interface for interacting with the ticket platform. Kelly’s job does  not involve technical skills and she values a simple user interface. |
-| Technician     | Vincent | ![image-20211102234432742](C:\Users\I\Database\project\proposal.assets\image-20211102234432742.png) | Vincent is the technician, he is highly technical and understands the  workflow of maintaining a user interface and providing technical support for  the web tool. He must ensure that the interface of our web tool is easy for  the user to navigate and that the UI design is smooth. For repairs, if the  web tool crashes, he must debug any problems that our web tool is facing in  order for it to be running all the time without errors. |
-| Data Scientist | Ted     | ![image-20211102234438467](C:\Users\I\Database\project\proposal.assets\image-20211102234438467.png) | Ted is a data scientist. He has a data analytics background and is  familiar with the impact of carbon emissions on other sectors, specifically  environmental aspects in a way to garner sympathy of the user to care about  their carbon impacts while traveling. He understands the workflow to connect  data among several sources, such as API. His work would focus on Data  Wrangling, Preprocessing and Training Data Development. He has to create our  own dataset by linking diverse existing data and calculating carbon emission  in three scenarios. For updates to the database, he must follow a standard  protocol to ensure the database is updated and data is not out of date, and  that our data is related to the airlines. In addition, he must monitor and  verify the accuracy of carbon credits to ensure that they are connected to  the related systems. |
+| Traveler       | Kelly   | ![image-20211102234534718](proposal.assets/image-20211102234534718.png) | Kelly loves to travel around among U.S. cites. She cares about  climate change and she thinks travel pattern choices are the most effective  way to strive for a net-carbon zero world. She wants to check the date,  price, best choice, and see which flights would emit less amount of carbon.  Kelly is willing to pay some money for offsetting carbon and wants a safe and  secure interface for interacting with the ticket platform. Kelly’s job does  not involve technical skills and she values a simple user interface. |
+| Technician     | Vincent | ![image-20211102234432742](proposal.assets/image-20211102234432742.png) | Vincent is the technician, he is highly technical and understands the  workflow of maintaining a user interface and providing technical support for  the web tool. He must ensure that the interface of our web tool is easy for  the user to navigate and that the UI design is smooth. For repairs, if the  web tool crashes, he must debug any problems that our web tool is facing in  order for it to be running all the time without errors. |
+| Data Scientist | Ted     | ![image-20211102234438467](proposal.assets/image-20211102234438467.png) | Ted is a data scientist. He has a data analytics background and is  familiar with the impact of carbon emissions on other sectors, specifically  environmental aspects in a way to garner sympathy of the user to care about  their carbon impacts while traveling. He understands the workflow to connect  data among several sources, such as API. His work would focus on Data  Wrangling, Preprocessing and Training Data Development. He has to create our  own dataset by linking diverse existing data and calculating carbon emission  in three scenarios. For updates to the database, he must follow a standard  protocol to ensure the database is updated and data is not out of date, and  that our data is related to the airlines. In addition, he must monitor and  verify the accuracy of carbon credits to ensure that they are connected to  the related systems. |
 
 ## FUNCTIONAL DESIGN
 
-| ![image-20211102234534718](C:\Users\I\Database\project\proposal.assets\image-20211102234534718.png) | Kelly loves to travel among U.S. cities. She wants to check the cheapest flight price, the flight/airline with lowest carbon emission, and the carbon-neural ticket prices. <br />Kelly is willing to pay some money for offsetting carbon and wants a safe and secure interface for interacting with the ticket platform. Kelly’s job does not involve technical skills and she values a simple user interface. |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![clip_image002](proposal.assets/clip_image002.gif) | Kelly loves to travel among U.S. cities. She wants to check the cheapest flight price, the flight/airline with lowest carbon emission, and the carbon-neural ticket prices. <br />Kelly is willing to pay some money for offsetting carbon and wants a safe and secure interface for interacting with the ticket platform. Kelly’s job does not involve technical skills and she values a simple user interface. |
+| --------------------------------------------------- | ------------------------------------------------------------ |
 
 Kelly’s story reveals three use cases: **cheapest flight price, the flight/airline with lowest carbon emission, and the carbon-neural ticket prices.** The following section will show the user authentication by three use cases:
 
@@ -97,7 +97,7 @@ Kelly’s story reveals three use cases: **cheapest flight price, the flight/air
 
 ### Interactive Chart
 
-![untitled@2x (1)](C:\Users\I\Database\project\proposal.assets\untitled@2x (1)-16359226974436.png)
+![untitled@2x (1)](proposal.assets/untitled@2x (1).png)
 
 ### **CARBON OUTPUT FORMULA**
 
@@ -105,13 +105,13 @@ Kelly’s story reveals three use cases: **cheapest flight price, the flight/air
 
 There are two ways to calculate distance/ air mileage between two cities. One is the Vincenty's formula, which calculates the distance between latitude/longitude points on the earth’s surface, using an ellipsoidal model of the earth. 
 
-![img](C:\Users\I\Database\project\proposal.assets\Nxk9NhVx7H4opr9oM4VNC4ypfXfpdgtipN3NRJ3mpr8o5YMVuKTA8TjidsKd2aHp3waFtz-B2XI3L2k0vFXuxdy5fC-5qjdLwSlhDdCUJNCmZwSw4BUrSqgZiM0Y26BmEv6tCLOe.png)
+![Nxk9NhVx7H4opr9oM4VNC4ypfXfpdgtipN3NRJ3mpr8o5YMVuKTA8TjidsKd2aHp3waFtz-B2XI3L2k0vFXuxdy5fC-5qjdLwSlhDdCUJNCmZwSw4BUrSqgZiM0Y26BmEv6tCLOe](proposal.assets/Nxk9NhVx7H4opr9oM4VNC4ypfXfpdgtipN3NRJ3mpr8o5YMVuKTA8TjidsKd2aHp3waFtz-B2XI3L2k0vFXuxdy5fC-5qjdLwSlhDdCUJNCmZwSw4BUrSqgZiM0Y26BmEv6tCLOe.png)
 
 Figure 4: Vincenty's formula
 
 The other, what we decide to use, is the Haversine formula, which calculates the distance between latitude/longitude points assuming a spherical earth (great-circle distance – the shortest distance between two points). 
 
-![img](https://lh3.googleusercontent.com/OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g)
+![OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g](proposal.assets/OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g.png)
 
 Figure 5: Haversine formula
 
@@ -119,7 +119,7 @@ Figure 5: Haversine formula
 
 When evaluating the size of a seat, the main terms used are *pitch* and *width*. Seat pitch is defined as the space between a point on one seat and the same point on the seat in front of it. In almost all cases, seat pitch increases with class of travel (economy, business, first, etc.) For many carriers, the pitch in economy class is 29 to 32 inches. American Airlines' business class seat pitches in their former Boeing 767-200s were 62 inches, the largest in any short-haul business class. American Airlines have first-class flatbed seats in their Airbus A330-300s with a seat pitch of 94 inches. Seat width can be taken as the width enclosed by the armrests on each side that is the width available to sit in. In Economy class this width was typically 17 to 18 inches. Then, we decided to set the ratio of economic and first-class would be (21/17)*(94/30) = 3.87.
 
-![img](C:\Users\I\Database\project\proposal.assets\8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS.png)
+![8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS](proposal.assets/8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS.png)
 
 Figure 6: Seats
 
@@ -167,7 +167,7 @@ How does it work: We will support different ticketing platforms one by one. In t
 
 We could send the link and receive data from the KAYAK, which includes almost all the data we need (figure X). Then we generate the result dataframe and do data preprocessing, including data cleaning, filtering, renaming, etc.
 
-![img](C:\Users\I\Database\project\proposal.assets\Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ.png)
+![Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ](proposal.assets/Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ.png)
 
 Figure 7: the data received from KAYAK
 
