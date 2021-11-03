@@ -95,6 +95,10 @@ Kelly’s story reveals three use cases: **cheapest flight price, the flight/air
 
 ## COMPONENT DESIGN 
 
+### Interactive Chart
+
+![untitled@2x (1)](C:\Users\I\Database\project\proposal.assets\untitled@2x (1)-16359226974436.png)
+
 ### **CARBON OUTPUT FORMULA**
 
 ####  Distance calculation
