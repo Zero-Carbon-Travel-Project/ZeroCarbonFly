@@ -14,7 +14,7 @@ The US has pledged to achieve carbon neutrality by 2050, with a 2030 emissions t
 
 According to the U.S. Greenhouse Gas Emissions and Sinks report by EPA, the primary source of greenhouse gas emissions in the United States is Transportation, which composed 29 percent of 2019 greenhouse gas emissions(see Figure 1). These Greenhouse gas emissions are from transportation primarily come from burning fossil fuel for our cars, trucks, ships, trains, and planes. Over 90 percent of the fuel used for transportation is petroleum based, which includes primarily gasoline and diesel.
 
-![image-20211102234006027](proposal.assets/image-20211102234006027.png)
+<img align="center" src="proposal.assets/image-20211102234006027.png" alt="image-20211102234006027" style="zoom:80%;" />
 
 
 
@@ -97,7 +97,7 @@ Kelly’s story reveals three use cases: **cheapest flight price, the flight/air
 
 ### Interactive Chart
 
-![untitled@2x (1)](proposal.assets/untitled@2x (1).png)
+![flow](proposal.assets/flow.png)
 
 ### **CARBON OUTPUT FORMULA**
 
@@ -111,7 +111,7 @@ Figure 4: Vincenty's formula
 
 The other, what we decide to use, is the Haversine formula, which calculates the distance between latitude/longitude points assuming a spherical earth (great-circle distance – the shortest distance between two points). 
 
-![OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g](proposal.assets/OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g.png)
+<img src="proposal.assets/OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g.png" alt="OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g" style="zoom: 55%;" />
 
 Figure 5: Haversine formula
 
@@ -119,7 +119,7 @@ Figure 5: Haversine formula
 
 When evaluating the size of a seat, the main terms used are *pitch* and *width*. Seat pitch is defined as the space between a point on one seat and the same point on the seat in front of it. In almost all cases, seat pitch increases with class of travel (economy, business, first, etc.) For many carriers, the pitch in economy class is 29 to 32 inches. American Airlines' business class seat pitches in their former Boeing 767-200s were 62 inches, the largest in any short-haul business class. American Airlines have first-class flatbed seats in their Airbus A330-300s with a seat pitch of 94 inches. Seat width can be taken as the width enclosed by the armrests on each side that is the width available to sit in. In Economy class this width was typically 17 to 18 inches. Then, we decided to set the ratio of economic and first-class would be (21/17)*(94/30) = 3.87.
 
-![8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS](proposal.assets/8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS.png)
+<img src="proposal.assets/8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS.png" alt="8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS" style="zoom: 67%;" />
 
 Figure 6: Seats
 
@@ -167,7 +167,7 @@ How does it work: We will support different ticketing platforms one by one. In t
 
 We could send the link and receive data from the KAYAK, which includes almost all the data we need (figure X). Then we generate the result dataframe and do data preprocessing, including data cleaning, filtering, renaming, etc.
 
-![Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ](proposal.assets/Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ.png)
+<img src="proposal.assets/Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ.png" alt="Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ"  />
 
 Figure 7: the data received from KAYAK
 
