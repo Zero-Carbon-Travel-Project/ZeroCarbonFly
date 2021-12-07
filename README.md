@@ -2,7 +2,7 @@
 
 
 ----
-<img src="doc/cover image_carbon project.png">
+<img src="doc/cover image_carbon project.png" height="250" width="250" align=center>
 
 source: Mackincey, 2021
 
@@ -22,6 +22,18 @@ Among all the travel patterns, air travel is the fastest-growing source of carbo
 ----
 
 ### Dataset
+
+This platform has two main steps to collect data.
+
+1. CRAWLING DATA PROCESS
+
+We could start from crawling data we need from flight ticket platforms. Here, we will focus on the KAYAK (www.kayak.com). For example, when a user requests the two adult tickets from Seattle (SEA) to Los Angeles (LAX), a round trip (2021-12-03 & 2021-12-13), business class, the link for the request will be :
+
+https://www.kayak.com/flights/SEA-LAX/2021-12-03/2021-12-13/business/2adults
+
+We could send the link and receive data from the KAYAK, which includes almost all the data we need (figure X). Then we generate the result dataframe and do data preprocessing, including data cleaning, filtering, renaming, etc.
+
+2. CARBON
 
 
 ### Software and License information
