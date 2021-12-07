@@ -32,7 +32,8 @@ def kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,cla
     #file_name = str(departure_airport_code) + str(arrival_airport_code) + str(year) + str(month) + str(day) + str(class_type) + str(carry_on_bag_number) + str(checked_bag_number) 
 
     #start the robot for Chrome and open the url
-    bot = webdriver.Chrome(executable_path='assets/chromedriver.exe',chrome_options=chrome_options)
+    bot = webdriver.Chrome(executable_path='C:/Users/imanh/Desktop/Code/CSE583/project/ticket-crawler/assets/chromedriver.exe',chrome_options=chrome_options)
+    #bot = webdriver.Chrome(executable_path='assets/chromedriver.exe',chrome_options=chrome_options)
     bot.get(request_url)
 
     print("open chrome finished")
