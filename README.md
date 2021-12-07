@@ -2,7 +2,7 @@
 
 
 ----
-<img src="doc/images/cover image_carbon project.png">
+<img src="doc/cover image_carbon project.png">
 
 source: Mackincey, 2021
 
