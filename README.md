@@ -36,15 +36,34 @@ We could send the link and receive data from the KAYAK, which includes almost al
 2. CARBON
 
 
-### Software and License information
+### Software requirment
 
-INPUT Repository Structure after finish this project
+**All the required software is open source.**  The implementation was done using the following language and packages.  
+
+**Programming language:**   
+Python version 2.7  ([https://www.python.org/](https://www.python.org/))
+
+**Python packages needed:**
+- NumPy 1.10.4
+- pandas 0.18.0
+- Bokeh 0.11.1
+- matplotlib 1.5.1
+- ipywidgets 4.1.1
+- Jupyter 1.0.0
+- SALib 0.7.1 (To perform sensitivity analysis)
+- graph-tool 2.12 (To generate network plots)**
+
+  \*\*not included in requirements.txt (see [documentation](http://savvy.readthedocs.org))
+  
+
 
 LegTextScraper primarily uses a Python-based web browser automation tool, [Selenium](https://www.selenium.dev), to conduct webscraping. This requires a specific browser and browser driver to work properly. The package is built using Google Chrome.
 
 - Python = 3.7
 - [Google Chrome](https://www.google.com/chrome/)  
 - [Chrome Driver](https://chromedriver.chromium.org/downloads)
+
+
 
 To check your installed Chrome version and to download the appropriate Chrome Driver, follow these instructions:
 1. Open Google Chrome
@@ -57,56 +76,28 @@ To check your installed Chrome version and to download the appropriate Chrome Dr
 5. Find the [Chrome Driver](https://chromedriver.chromium.org/downloads) that corresponds to your version and save it to your local drive
 
 
+  
+### License information
 
+**License information:**   
+savvy is licensed under a BSD 2-clause “Simplified” License. The objective behind this choice of licensing is to make the content reproducible and make it useful for as many people as possible. We want to maximize the two-way collaborations with minimum restrictions, so that developers of other projects can easily utilize, patch, improve, and cite this code.
+For detailed description of the contents of license please refer to [License](https://github.com/houghb/savvy/blob/master/LICENSE)
+
+----
 ### Quick Start
 For the quickest introduction to savvy, run the file [`savvy_driver.ipynb`](http://nbviewer.jupyter.org/github/houghb/savvy/blob/master/savvy_driver.ipynb) in a Jupyter notebook.
 
 Alternatively, install savvy using setup.py (see the documentation for details), then run the following in a Jupyter notebook.  The Jupyter notebook is required for interactive widgets to work, but the core plotting functionality can also be run from the command line and Bokeh will generate html figures if preferred (see the Bokeh documentation for instructions).
+
+
 ```python
-import copy
-
-from bokeh.plotting import show, output_notebook
-import os.path as op
-
-import savvy
-import savvy.data_processing as dp
-import savvy.interactive_plots as ip
-from savvy.plotting import make_plot, make_second_order_heatmap
-import savvy.network_tools as nt
-
-output_notebook()
-
-# path to sample data files
-path = op.join(savvy.__path__[0], 'sample_data_files/')
-
-# process the data files and store their pandas dataframes in a dictionary
-sa_dict = dp.get_sa_data(path)
-
-# create interactive radial plots (or bar charts if few features) for ST and S1
-ip.interact_with_plot_all_outputs(sa_dict)
-
-# Plot heat maps of S2 indices for all your analysis files
-ip.plot_all_second_order(sa_dict, top=5, mirror=True)
-
-# Display a network plot of the second order interactions
-# with first or total order sensitivity indices
-# (set inline to false for an interactive window)
-sa_dict_net = copy.deepcopy(sa_dict)
-g = nt.build_graph(sa_dict_net['sample-output1'], sens='ST', top=40,
-                   min_sens=0.01, edge_cutoff=0.0)
-nt.plot_network_circle(g, inline=True)
+code
 ```
+---
 
+### Use Cases
 
-LegTextScraper is installed using the command line and is best used with a virtual environment due to its dependencies.
-
-1. Open your choice of terminal (e.g., Terminal (MacOS) or [Ubuntu 20.04 LTS](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?activetab=pivot:overviewtab) (Windows))
-2. Clone the repoistory using `git clone https://github.com/ka-chang/LegTextScraper.git`
-3. Change to the LegTextScraper repository using `cd LegTextScraper`
-4. Set up a new virtual environment using `conda create –n legtextscraper python=3.7`
-5. Activate the legtextscraper virtual environment with `conda activate legtextscraper`
-6. Install package requirements using `pip3 install –r requirements.txt`
-
+Researchers can gather raw data for nuanced, tailored analysis, while journalists and members of the public can engage with our text analysis dashboards to capture high-level trends in the political discourse at the state legislature.
 
 ----
 
@@ -131,6 +122,8 @@ LegTextScraper is installed using the command line and is best used with a virtu
 **[savvy/sample_data_files](https://github.com/houghb/savvy/tree/master/savvy/sample_data_files)** - Contains sample sensitivity analysis results from a Sobol sensitivity analysis using SALib that are used for unit testing and for demonstrating the package features.
 
 ----
+
+
 ### Repository structure
 
 INPUT Repository Structure after finish this project
