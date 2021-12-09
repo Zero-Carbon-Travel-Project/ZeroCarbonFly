@@ -37,12 +37,10 @@ Python version 2.7  ([https://www.python.org/](https://www.python.org/))
 **Python packages needed:**
 - NumPy 1.10.4
 - pandas 0.18.0
-- Bokeh 0.11.1
 - matplotlib 1.5.1
 - ipywidgets 4.1.1
 - Jupyter 1.0.0
-- SALib 0.7.1 (To perform sensitivity analysis)
-- graph-tool 2.12 (To generate network plots)**
+- Streamlit 1.2.0
 
 ----
 
@@ -54,18 +52,11 @@ Zero-Carbon-fly website is licensed under the MIT License, a short and simple pe
 
 ----
 
-### Set up (Haoyu)
-
-
-
-
-----
-
-### Quick Start (Imen)
-For the quickest introduction to ZeroCarbonFly, run the file [`example.ipynb`](put the link here) in a Jupyter notebook.
+### Set Up (Imen)
+For the quickest introduction to ZeroCarbonFly, run the repository to your local computer. Navigate to the corresponding directory where the repo is saved, then navigate to the ZeroCarbonFly folder, then run the following command in your Windows Terminal.
 
 ```python
-code
+streamlit run App.py
 ```
 ----
 
