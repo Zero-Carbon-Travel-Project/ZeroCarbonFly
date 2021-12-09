@@ -1,1 +1,0 @@
-Functional specification that motivates what is being built and describes the use cases.

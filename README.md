@@ -27,7 +27,7 @@ visualize the zero-carbon potentials and benefits for travellers.
 
 ----
 
-### Software requirment
+### Software requirment (need confirm after finish all modules)
 
 **All the required software is open source.**  The implementation was done using the following language and packages.  
 
