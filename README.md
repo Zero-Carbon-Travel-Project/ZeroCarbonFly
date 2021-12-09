@@ -75,7 +75,7 @@ Zero-Carbon-fly website is licensed under the MIT License, a short and simple pe
 ----
 
 ### Set Up Locally
-For the quickest introduction to ZeroCarbonFly, run the repository to your local computer. Navigate to the corresponding directory where the repo is saved, then navigate to the ZeroCarbonFly folder, then run the following command in your Windows Terminal.
+For the quickest introduction to ZeroCarbonFly, close the repository to your local computer. Navigate to the corresponding directory where the repo is saved, then navigate to the ZeroCarbonFly folder, then run the following command in your Windows Terminal.
 
 ```python
 pip install --upgrade streamlit
