@@ -85,11 +85,25 @@ Contains instruction to use our website.
 
 The package is organized as follows:
 
-
-ASK TA about how to create a tree.
-
-
-
+```
++-- _config.yml
++-- _drafts
+|   +-- begin-with-the-crazy-ideas.textile
+|   +-- on-simplicity-in-technology.markdown
++-- _includes
+|   +-- footer.html
+|   +-- header.html
++-- _layouts
+|   +-- default.html
+|   +-- post.html
++-- _posts
+|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
+|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
++-- _data
+|   +-- members.yml
++-- _site
++-- index.html
+```
 
 ### Acknowledgements
 Thanks to Dr. David Beck and Anant Mittal at the University of Washington for their guidance and feedback in the development of this website.
