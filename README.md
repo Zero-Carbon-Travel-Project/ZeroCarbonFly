@@ -19,6 +19,22 @@ According to the U.S. Greenhouse Gas Emissions and Sinks report by EPA, the prim
 Among all the travel patterns, air travel is the fastest-growing source of carbon emissions and emits the largest greenhouse gas. If the costs of environmental damage were reflected in flight ticket prices through effective carbon pricing, it would make other travel patterns, such as buses and trains, look a whole lot more attractive (Deutsche Welle, 2021). Additionally, **air travelers said they are willing to pay more for carbon-neutral tickets** with fliers aged 18 to 34 willing to pay the most, according to Mckinsey & Company’s research.
 
 ----
+### Repo Organization
+
+The repository is organized as follows:
+```
++-- ZeroCarbonFly
+|   +-- Appy.py
+|   +-- kayak.py
++-- doc
+|   +-- Design Specification.md
+|   +-- Software Design.md
+|   +-- Tech Review.pptx
+|   +-- Final Presentation.pptx
++-- LICENSE
++-- README.md
+```
+----
 
 ### Dataset
 
@@ -81,29 +97,6 @@ INTRODUCE all details file
 **[example](https://github.com/Zero-Carbon-Travel-Project/project/tree/main/example)** - 
 Contains instruction to use our website.
 
-
-
-The package is organized as follows:
-
-```
-+-- _config.yml
-+-- _drafts
-|   +-- begin-with-the-crazy-ideas.textile
-|   +-- on-simplicity-in-technology.markdown
-+-- _includes
-|   +-- footer.html
-|   +-- header.html
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
-```
 
 ### Acknowledgements
 Thanks to Dr. David Beck and Anant Mittal at the University of Washington for their guidance and feedback in the development of this website.
