@@ -24,13 +24,19 @@ Among all the travel patterns, air travel is the fastest-growing source of carbo
 The repository is organized as follows:
 ```
 +-- ZeroCarbonFly
-|   +-- Appy.py
-|   +-- kayak.py
+|   +-- App.py
+|   +-- Kayak.py
+|   +-- Tests.py
 +-- doc
 |   +-- Design Specification.md
 |   +-- Software Design.md
 |   +-- Tech Review.pptx
 |   +-- Final Presentation.pptx
++-- example
+|   +-- ZeroCarbonFly_example.py
+|   +-- Demo.mp4
+|   +-- Example 1.jpeg
+|   +-- Example 2.jpeg
 +-- LICENSE
 +-- README.md
 ```
