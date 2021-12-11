@@ -1,3 +1,12 @@
+from selenium import webdriver
+from bs4 import BeautifulSoup
+
+import pandas as pd
+import time, datetime
+import re
+import math
+
+
 def kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number):
     '''
     The function is used to crawl the flight ticket information from Kayak.com. 
@@ -14,26 +23,19 @@ def kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,cla
     carry_on_bag_number: 0 or 1.
     checked_bag_number: 0 0r 1 or 2.
     '''
-    from selenium import webdriver
-    from bs4 import BeautifulSoup
-
-    import pandas as pd
-    import time, datetime
-    import re
-    import math
 
     #no picture displayed in Chrome
     chrome_options = webdriver.ChromeOptions()
     prefs = {"profile.managed_default_content_settings.images": 2}
     chrome_options.add_experimental_option("prefs", prefs)
-
+    
+    #get the flight url
     root_url = "https://www.kayak.com/flights/" 
     request_url = root_url + str(departure_airport_code) + "-" + str(arrival_airport_code) + "/" + str(year) + "-" + str(month) + "-" + str(day) + "/"+ str(class_type) + "?fs=cfc=" + str(carry_on_bag_number) + ";stops=~0;bfc=" + str(checked_bag_number) + "&sort=bestflight_a"
     #file_name = str(departure_airport_code) + str(arrival_airport_code) + str(year) + str(month) + str(day) + str(class_type) + str(carry_on_bag_number) + str(checked_bag_number) 
 
     #start the robot for Chrome and open the url
-    bot = webdriver.Chrome(executable_path='C:/Users/imanh/Desktop/Code/CSE583/project/ticket-crawler/assets/chromedriver.exe',chrome_options=chrome_options)
-    #bot = webdriver.Chrome(executable_path='assets/chromedriver.exe',chrome_options=chrome_options)
+    bot = webdriver.Chrome(executable_path='assets/chromedriver.exe',chrome_options=chrome_options)
     bot.get(request_url)
 
     print("open chrome finished")
@@ -89,4 +91,6 @@ def kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,cla
             df = df.append(record)
         except:
             pass
+    #clean the aircraft column
+    df['aircraft'] = df['aircraft'].str.partition("/").loc[:,0].str.partition("(")[0]
     return df
