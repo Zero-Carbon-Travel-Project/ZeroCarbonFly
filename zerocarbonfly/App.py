@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-filename_airport = './airports.csv'
-filename_aircraft = './aircraft.csv'
+filename_airport = 'assets/airports.csv'
+filename_aircraft = 'assets/aircraft.csv'
 output = './output.xlsx'
 
 import pandas as pd
@@ -114,9 +114,9 @@ import re
 
 if st.sidebar.button('Submit'):
     with st.spinner('Finding flights...'):
-        #df = kayak.kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number)
+        df = kayak.kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number)
         #df = kayak.kayak_tickets("SEA","LAX","12","15","2021","business",1,0)
-        df = pd.read_excel(output)
+        #df = pd.read_excel(output)
         st.dataframe(df)
     st.success('Done!')
 
