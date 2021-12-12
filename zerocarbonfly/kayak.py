@@ -7,6 +7,7 @@ import datetime
 import re
 
 import pandas as pd
+import math
 
 from selenium import webdriver
 from bs4 import BeautifulSoup
@@ -94,3 +95,84 @@ def kayak_tickets(
     df['aircraft'] = df['aircraft'].str.partition("/").loc[:,0].str.partition("(")[0]
     print("all finished")
     return df
+
+def get_great_circle_distance(dept_lat_long,arrival_lat_long):
+    x1 = math.radians(dept_lat_long[0])
+    y1 = math.radians(dept_lat_long[1])
+    x2 = math.radians(arrival_lat_long[0])
+    y2 = math.radians(arrival_lat_long[1])
+    angle = math.degrees(math.acos(math.sin(x1)*math.sin(x2)+math.cos(x1) * math.cos(x2) * math.cos(y1 - y2))) 
+    # Angel times 60 to get nautical miles, then times 1.852 to get km
+    distance = 60 * angle * 1.852 
+    return distance
+
+# ICAO's carbon emissions formula. 
+def get_co2_emission(fuel_burn,num_of_seats,distance,num_of_pax=1):
+    # Correction to GCD distance
+    if distance < 550:
+        distance += 50
+    elif distance >= 550 and distance <= 5500:
+        distance += 100
+    else:
+        distance += 125
+    pax_load_factor =  0.80
+    pax_to_freight_factor = 0.85
+    # fuel burn: kg/km
+    total_fuel = fuel_burn * distance
+    co2_per_pax = 3.16 * ( total_fuel * pax_to_freight_factor)/(num_of_seats * pax_load_factor)
+    # kg carbon
+    emission = co2_per_pax * num_of_pax
+    return emission
+
+def get_distance_from_df(df_row):
+    dept_lat_long = df_row['arrival Airport lat long']
+    arrival_lat_long =df_row['departure Airport lat long'] 
+    distance=get_great_circle_distance(dept_lat_long,arrival_lat_long)
+    return distance
+
+def get_co2_emission_from_df(df_row):
+    fuel_burn =df_row['fuelburn']
+    distance = df_row['distance']
+    num_of_seats=df_row['seats']
+    emission= get_co2_emission(fuel_burn,num_of_seats,distance)
+    return emission
+
+# Raise sea level in inches
+def cvt_sea_lvl(df_row):
+    emission = df_row[['emission']].values[0]
+    return emission*5.42*(10**(-3))
+
+# Lit eiffel tower in hours
+def cvt_lit_eiffel_tower(df_row):
+    emission = df_row[['emission']].values[0]
+    return emission*0.338
+
+def crawl_and calculate(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number):
+    df_data_in = kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number)
+    filename_airport = './airports.csv'
+    filename_aircraft = './aircraft.csv'
+
+    df_airport_in = pd.read_csv(filename_airport)
+    df_airport_in['lat_long'] = df_airport_in[['latitude_deg','longitude_deg']].apply(tuple, axis=1)
+    dict_airport = dict(df_airport_in[['iata_code','lat_long']].values)
+    dict_airport = {k: v for k, v in dict_airport.items() if v}
+
+    df_aircraft_in = pd.read_csv(filename_aircraft)
+    dict_aircraft_fb = dict(df_aircraft_in[['Model','Fuel burn(kg/km)']].values)
+    dict_aircraft_seats = dict(df_aircraft_in[['Model','Seats']].values)
+
+    # Get lat and long for two airports
+    df_data_in['arrival Airport lat long'] = df_data_in['arrival_airport_code'].map(dict_airport)
+    df_data_in['departure Airport lat long'] = df_data_in['departure_airport_code'].map(dict_airport)
+
+    # Get circle distances
+    df_data_in['distance'] = df_data_in.apply(get_distance_from_df,axis=1).astype(float)
+    # Get fuel burn and num of seats
+    df_data_in['aircraft'] = df_data_in['aircraft'].str.strip()
+    df_data_in['fuelburn'] = df_data_in['aircraft'].map(dict_aircraft_fb).astype(float)
+    df_data_in['seats'] = df_data_in['aircraft'].map(dict_aircraft_seats).astype(float)
+    # Get emission
+    df_data_in['emission'] = df_data_in.apply(get_co2_emission_from_df,axis=1)
+    df_data_in['sea_lvl_inches'] = df_data_in.apply(cvt_sea_lvl,axis=1)
+    df_data_in['lit_eiffel_tower_hrs'] = df_data_in.apply(cvt_lit_eiffel_tower,axis=1)
+    return df_data_in
