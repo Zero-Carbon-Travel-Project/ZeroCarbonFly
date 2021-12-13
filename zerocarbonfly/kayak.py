@@ -147,10 +147,10 @@ def cvt_lit_eiffel_tower(df_row):
     emission = df_row[['emission']].values[0]
     return emission*0.338
 
-def crawl_and calculate(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number):
+def crawl_and_calculate(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number):
     df_data_in = kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number)
-    filename_airport = './airports.csv'
-    filename_aircraft = './aircraft.csv'
+    filename_airport = './assets/airports.csv'
+    filename_aircraft = './assets/aircraft.csv'
 
     df_airport_in = pd.read_csv(filename_airport)
     df_airport_in['lat_long'] = df_airport_in[['latitude_deg','longitude_deg']].apply(tuple, axis=1)
