@@ -8,12 +8,7 @@
 
 
 
-<p align="center">Source: Mackincey, 2021
-</p>
-
-
-
-<p align="left"> </p>
+Source: Mackincey, 2021
 
 ---
 
