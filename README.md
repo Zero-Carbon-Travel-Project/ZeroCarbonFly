@@ -1,10 +1,16 @@
 # Zero-Carbon-Fly Decision-making Website
 
 
-----
-<img src="doc/assets/cover image_carbon project.png" height="250" width="250" align=center>
 
-source: Mackincey, 2021
+
+----
+<div align="center"><img src="doc/assets/logo_colorful.png" alt="carbon emission" width="70%" />
+
+<div align="center"><img src="doc/assets/cover_image_carbon project.png" alt="carbon emission" width="70%" />
+
+
+
+<div align="center">Source: Mackincey, 2021</div>
 
 ---
 

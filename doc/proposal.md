@@ -14,19 +14,21 @@ The US has pledged to achieve carbon neutrality by 2050, with a 2030 emissions t
 
 According to the U.S. Greenhouse Gas Emissions and Sinks report by EPA, the primary source of greenhouse gas emissions in the United States is Transportation, which composed 29 percent of 2019 greenhouse gas emissions(see Figure 1). These Greenhouse gas emissions are from transportation primarily come from burning fossil fuel for our cars, trucks, ships, trains, and planes. Over 90 percent of the fuel used for transportation is petroleum based, which includes primarily gasoline and diesel.
 
-<img align="center" src="assets/image-20211102234006027.png" alt="image-20211102234006027" style="zoom:80%;" />
+<div align="center"><img src="assets/image-20211102234006027.png" alt="carbon emission" width="30%" />
 
 
 
 Figure 1. Total U.S. Greenhouse Gas Emissions by Economic Sectors in 2019 (Source: EPA, 2021)
 
-Among all the travel patterns, air travel is the fastest-growing source of carbon emissions and emits the largest greenhouse gas. When a user travels between cities, flying is often the cheapest option for journeys. However, the main reason is that the negative impact on the environment was not included in the price users have paid. Air fuel isn't taxed on its environmental externality at all. If the costs of environmental damage were reflected in flight ticket prices through effective carbon pricing, it would make other travel patterns, such as buses and trains, look a whole lot more attractive (Deutsche Welle, 2021). Additionally, **air travelers said they are willing to pay more for carbon-neutral tickets** with fliers aged 18 to 34 willing to pay the most, according to Mckinsey & Company’s research.
+Among all the travel patterns, air travel is the fastest-growing source of carbon emissions and emits the largest greenhouse gas. When a user travels between cities, flying is often the cheapest option for journeys. However, the main reason is that the negative impact on the environment was not included in the price users have paid. Air fuel isn't taxed on its environmental externality at all. If the costs of environmental damage were reflected in flight ticket prices through effective carbon pricing, it would make other travel patterns, such as buses and trains, look a whole lot more attractive (Deutsche Welle, 2021). Additionally, **air travelers said they are willing to pay more for carbon-neutral tickets** with fliers aged 18 to 34 willing to pay the most, according to Mckinsey & Company’s research
 
-![image-20211102234117664](assets/image-20211102234117664.png)
+<div align="center"><img src="assets/image-20211102234117664.png" alt="carbon emission" width="30%" height="30%" />
+
+
 
 Figure 2. Greenhouse Gas Emissions among travel patterns (Source: DW, 2021)
 
-![image-20211102234146095](assets/image-20211102234146095.png)
+<div align="center"><img src="assets/image-20211102234146095.png" alt="carbon emission" width="50%"  />
 
 Figure 3. The survey output of willing to pay for carbon-neutral flight (Source: Mckinsey & Company’s, 2020)
 
@@ -97,7 +99,9 @@ Kelly’s story reveals three use cases: **cheapest flight price, the flight/air
 
 ### Interactive Chart
 
-<img src="assets/flow.png" alt="flow" style="zoom: 50%;" />
+<div align="center"><img src="assets/flow.png" alt="carbon emission" width="75%"  />
+
+
 
 ### **CARBON OUTPUT FORMULA**
 
@@ -105,13 +109,17 @@ Kelly’s story reveals three use cases: **cheapest flight price, the flight/air
 
 There are two ways to calculate distance/ air mileage between two cities. One is the Vincenty's formula, which calculates the distance between latitude/longitude points on the earth’s surface, using an ellipsoidal model of the earth. 
 
-![Nxk9NhVx7H4opr9oM4VNC4ypfXfpdgtipN3NRJ3mpr8o5YMVuKTA8TjidsKd2aHp3waFtz-B2XI3L2k0vFXuxdy5fC-5qjdLwSlhDdCUJNCmZwSw4BUrSqgZiM0Y26BmEv6tCLOe](assets/Nxk9NhVx7H4opr9oM4VNC4ypfXfpdgtipN3NRJ3mpr8o5YMVuKTA8TjidsKd2aHp3waFtz-B2XI3L2k0vFXuxdy5fC-5qjdLwSlhDdCUJNCmZwSw4BUrSqgZiM0Y26BmEv6tCLOe.png)
+<div align="center"><img src="assets/Nxk9NhVx7H4opr9oM4VNC4ypfXfpdgtipN3NRJ3mpr8o5YMVuKTA8TjidsKd2aHp3waFtz-B2XI3L2k0vFXuxdy5fC-5qjdLwSlhDdCUJNCmZwSw4BUrSqgZiM0Y26BmEv6tCLOe.png" alt="carbon emission" width="30%"  />
+
+
 
 Figure 4: Vincenty's formula
 
 The other, what we decide to use, is the Haversine formula, which calculates the distance between latitude/longitude points assuming a spherical earth (great-circle distance – the shortest distance between two points). 
 
-<img src="assets/OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g.png" alt="OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g" style="zoom:50%;" />
+
+
+<div align="center"><img src="assets/OJXbUXmLjnnwuN-KOojSAraD7HmdFYKdrWlVWU9uwTSN_K4kzaYAWmsSzl1ImtnCKAhzoJbxI0xQoLeZeKRHln0t0jvHg55jncaoKAmoU9HjUDijgd2IUWP8zyaWD5DApphciO5g.png" alt="carbon emission" width="35%"  />
 
 Figure 5: Haversine formula
 
@@ -119,7 +127,9 @@ Figure 5: Haversine formula
 
 When evaluating the size of a seat, the main terms used are *pitch* and *width*. Seat pitch is defined as the space between a point on one seat and the same point on the seat in front of it. In almost all cases, seat pitch increases with class of travel (economy, business, first, etc.) For many carriers, the pitch in economy class is 29 to 32 inches. American Airlines' business class seat pitches in their former Boeing 767-200s were 62 inches, the largest in any short-haul business class. American Airlines have first-class flatbed seats in their Airbus A330-300s with a seat pitch of 94 inches. Seat width can be taken as the width enclosed by the armrests on each side that is the width available to sit in. In Economy class this width was typically 17 to 18 inches. Then, we decided to set the ratio of economic and first-class would be (21/17)*(94/30) = 3.87.
 
-<img src="assets/8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS.png" alt="8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS" style="zoom: 75%;"/>
+<div align="center"><img src="assets/8ZzgK03uVS3vv_E6I0qWQzfemeOEamA-oYUtyYxolYFqGKxQy0bxBf0GNgH9wTop07eEaCJ8Kf5tbyc8mU7Wz46iEyMIGtLBKCeeFyhB4oUcc4pGmTCkZTXSsJy7EZFrps0dunCS.png" alt="carbon emission" width="35%"  />
+
+
 
 Figure 6: Seats
 
@@ -167,7 +177,7 @@ How does it work: We will support different ticketing platforms one by one. In t
 
 We could send the link and receive data from the KAYAK, which includes almost all the data we need (figure X). Then we generate the result dataframe and do data preprocessing, including data cleaning, filtering, renaming, etc.
 
-<img src="assets/Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ.png" alt="Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ" style="zoom:120%;" />
+<div align="center"><img src="assets/Pn2tW2LlB2RxlODJ9R-NbTBuc5rrMDt9irogaZ65_R_0qTESFku8pv5glyRMHEYKch_AF50vthpRD2h_1diY46Qxp_MFqXjA1dnwGBi3j3lsazhNY6GQjXiYt6IHsJ3yhxongAMQ.png" alt="carbon emission" width="50%"  />
 
 Figure 7: the data received from KAYAK
 
