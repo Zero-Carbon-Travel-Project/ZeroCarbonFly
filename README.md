@@ -2,7 +2,7 @@
 
 
 ----
-<img src="doc/cover image_carbon project.png" height="250" width="250" align=center>
+<img src="doc/assets/cover image_carbon project.png" height="250" width="250" align=center>
 
 source: Mackincey, 2021
 
@@ -66,7 +66,7 @@ Python version 2.7  ([https://www.python.org/](https://www.python.org/))
 
 ----
 
-  
+
 ### License information
 
 Zero-Carbon-fly website is licensed under the MIT License, a short and simple permissive license with conditions only requiring preservation of copyright and license notices. The objective behind this choice of licensing is to make the content reproducible and make it useful for as many people as possible. 
