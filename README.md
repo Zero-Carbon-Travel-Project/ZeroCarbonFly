@@ -1,6 +1,4 @@
-# Zero-Carbon-Fly Decision-making Website
-
-
+# Carbon Neutral Flying Decision-Making Website
 
 
 ----
@@ -10,9 +8,7 @@
 
 
 
-<p><div align="center">Source: Mackincey, 2021</div></p>
-
-
+<p align="center">Source: Mackincey, 2021</p>
 
 ---
 
