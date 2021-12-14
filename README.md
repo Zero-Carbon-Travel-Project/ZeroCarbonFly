@@ -2,9 +2,9 @@
 
 
 ----
-<div align="center"><img src="doc/assets/logo_colorful.png" alt="carbon emission" width="70%" />
+<img align="center" src="doc/assets/logo_colorful.png" alt="carbon emission" width="70%">
 
-<div align="center"><img src="doc/assets/cover_image_carbon project.png" alt="carbon emission" width="70%" />
+<img align="center" src="doc/assets/cover_image_carbon project.png" alt="carbon emission" width="70%">
 
 
 
