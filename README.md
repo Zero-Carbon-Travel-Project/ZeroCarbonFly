@@ -83,7 +83,7 @@ For the quickest introduction to ZeroCarbonFly, close the repository to your loc
 
 ```python
 pip install --upgrade streamlit
-streamlit run App.py
+streamlit run Website.py
 ```
 ----
 
