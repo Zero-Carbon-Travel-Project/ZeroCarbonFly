@@ -114,7 +114,7 @@ import re
 
 if st.sidebar.button('Submit'):
     with st.spinner('Finding flights...'):
-        df = kayak.kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number)
+        df = kayak.crawl_and_calculate(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number)
         #df = kayak.kayak_tickets("SEA","LAX","12","15","2021","business",1,0)
         #df = pd.read_excel(output)
         st.dataframe(df)
