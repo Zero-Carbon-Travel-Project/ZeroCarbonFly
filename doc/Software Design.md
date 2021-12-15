@@ -99,7 +99,7 @@ Each group has two members to work on software development.
 
 **DATA group:** Chin-wei and Haoyu work on crawling and manipulating data.
 
-**VISUALIZATION group:** Imen and Zining work on visualization and website design.
+**VISUALIZATION group:** Iman and Zining work on visualization and website design.
 
 
 ## 5. Project Plan
