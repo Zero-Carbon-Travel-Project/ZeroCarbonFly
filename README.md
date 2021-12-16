@@ -14,7 +14,7 @@ Source: Mackincey, 2021
 
 ### Mission
 
-Zero-Carbon-Fly **aims to influence individuals’ travel behaviors and commit to climate actions through providing a net-zero-carbon-oriented travel pattern decision platform. How to internalize environmental externality by presenting carbon costs and guide users to decide on low carbon travel patterns**
+Carbon Neutral Flying **aims to influence individuals’ travel behaviors and commit to climate actions through providing a net-zero-carbon-oriented travel pattern decision platform. How to internalize environmental externality by presenting carbon costs and guide users to decide on low carbon travel patterns**
 
 Climate change has become a crucial issue in contemporary society. The US has pledged to achieve carbon neutrality by 2050, with a 2030 emissions target to be announced shortly. To meet the 2015 Paris Agreement, global greenhouse gas emissions need to be cut by 25– 50% over the next decade.
 
@@ -27,46 +27,52 @@ Among all the travel patterns, air travel is the fastest-growing source of carbo
 
 The repository is organized as follows:
 ```
-+-- ZeroCarbonFly
-|   +-- App.py
-|   +-- Kayak.py
-|   +-- Tests.py
-+-- doc
-|   +-- Design Specification.md
-|   +-- Software Design.md
-|   +-- Tech Review.pptx
-|   +-- Final Presentation.pptx
-+-- example
-|   +-- ZeroCarbonFly_example.py
-|   +-- Demo.mp4
-|   +-- Example 1.jpeg
-|   +-- Example 2.jpeg
-+-- LICENSE
-+-- README.md
+├── LICENSE
+├── README.md
+├── doc
+│   ├── Proposal.md
+│   ├── Software Design.md
+│   ├── Tech Review.pdf
+│   ├── Technician.md
+│   ├── User Story.md
+│   └── assets
+├── example
+│   └── ZeroCarbonFly_example.ipynb
+└── zerocarbonfly
+    ├── Website.py
+    ├── kayak.py
+    └── assets
 ```
 ----
 
 ### Dataset
 
-This website will crawl data from flight ticket platform, KAYAK (www.kayak.com), and 
-visualize the zero-carbon potentials and benefits for travellers.
+This website will crawl data from flight ticket platform, KAYAK (www.kayak.com), and visualize the zero-carbon potentials and benefits for travelers.
 
 ----
 
-### Software requirment (need confirm after finish all modules)
+### Software requirement 
 
-**All the required software is open source.**  The implementation was done using the following language and packages.  
+The website can only work on Linux system. If your use Windows Linux Subsystem (WSL), you need use Windows 11 or upper version of Windows. At the same time, you need follow the instruction from Microsoft to install the Google Chrome on your WSL. https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps       
 
-**Programming language:**   
-Python version 2.7  ([https://www.python.org/](https://www.python.org/))
+**System and Software**
 
-**Python packages needed:**
-- NumPy 1.10.4
-- pandas 0.18.0
-- matplotlib 1.5.1
-- ipywidgets 4.1.1
-- Jupyter 1.0.0
-- Streamlit 1.2.0
+- Linux 
+- Google Chrome for Linux 9.6
+
+**Programming language:**
+
+- Python version 3.8.8  ([https://www.python.org/](https://www.python.org/))
+
+**Python packages needed**
+
+- pandas 1.3.3
+- numpy 1.20
+- streamlit 1.2.0
+- selenium 4.0.0 
+- bs4 0.01
+- pydeck 0.7.1
+- altair 4.1.0
 
 ----
 
@@ -79,7 +85,7 @@ Zero-Carbon-fly website is licensed under the MIT License, a short and simple pe
 ----
 
 ### Set Up Locally
-For the quickest introduction to ZeroCarbonFly, close the repository to your local computer. Navigate to the corresponding directory where the repo is saved, then navigate to the ZeroCarbonFly folder, then run the following command in your Windows Terminal.
+For the quickest introduction to ZeroCarbonFly, close the repository to your local computer. Navigate to the corresponding directory where the repo is saved, then navigate to the ZeroCarbonFly folder, then run the following command on your Linux.
 
 ```python
 pip install --upgrade streamlit
@@ -91,22 +97,15 @@ streamlit run App.py
 
 There are three main folders in this platform:
 
-**[doc](https://github.com/Zero-Carbon-Travel-Project/project/tree/main/doc)** - 
-Contains the project documentation files and references that are used to build this platform.
+**[doc](https://github.com/Zero-Carbon-Travel-Project/project/tree/main/doc)** - Contains the project documentation files and references that are used to build this platform.
 
-**[ZeroCarbonFly](https://github.com/Zero-Carbon-Travel-Project/project/tree/main/ZeroCarbonFly)** - 
-Contains the main python modules for data crawling, unit tests, and website.
+**[ZeroCarbonFly](https://github.com/Zero-Carbon-Travel-Project/project/tree/main/ZeroCarbonFly)** - Contains the main python modules for data crawling and website.
 
 INTRODUCE all details file
 -  `ZeroCarbonFly.py`: A functions that can be used to crawl data from flight ticket platfrom and calcuate carbon emission and pricing for visualizing in website.
 -  `Website.py`: A python module for our ZeroCarbonFly website. 
 
-**[ZeroCarbonFly/tests](website link)** -  Contains unit tests for each of the modules.
-
-**[ZeroCarbonFly/sample_website](website link)** - Contains sample website from an demo data input for demonstrating the website features.
-
-**[example](https://github.com/Zero-Carbon-Travel-Project/project/tree/main/example)** - 
-Contains instruction to use our website.
+**[example](https://github.com/Zero-Carbon-Travel-Project/project/tree/main/example)** - Contains demo video and instruction to use our website.
 
 
 ### Acknowledgements

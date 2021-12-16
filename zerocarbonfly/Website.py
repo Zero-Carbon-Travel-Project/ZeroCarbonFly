@@ -2,19 +2,7 @@
 # coding: utf-8
 
 
-import pandas as pd
-df_airport = pd.read_csv(filename_airport)
-df_airport.head()
 
-
-df_aircraft = pd.read_csv(filename_aircraft)
-df_aircraft.head()
-
-
-departure_airport_code = "LAX"
-arrival_airport_code = "SFO"
-aircraft='Airbus A320'
-num_of_pax = 1
 
 
 import streamlit as st
@@ -32,6 +20,21 @@ cheapest = Image.open('./assets/decrease.png')
 shortest = Image.open('./assets/chronometer.png')
 bg = Image.open('./assets/background.jpg')
 plane = Image.open('./assets/plane.png')
+
+
+import pandas as pd
+df_airport = pd.read_csv(filename_airport)
+df_airport.head()
+
+
+df_aircraft = pd.read_csv(filename_aircraft)
+df_aircraft.head()
+
+departure_airport_code = "LAX"
+arrival_airport_code = "SFO"
+aircraft='Airbus A320'
+num_of_pax = 1
+
 
 st.title('ZeroCarbonFly')
 st.subheader('ZeroCarbonFly is a supporting tool for sustainable travel. Our website guides you to a green flight and visualizes your effort on Zero Carbon action.')
@@ -128,7 +131,7 @@ midpoint = (np.average(data["lat"]), np.average(data["lon"]))
 
 if st.sidebar.button('Submit'):
     with st.spinner('Finding flights...'):
-        #df = kayak.kayak_tickets(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number)
+        df = kayak.crawl_and_calculate(departure_airport_code,arrival_airport_code,month,day,year,class_type,carry_on_bag_number,checked_bag_number)
         #df = kayak.kayak_tickets("SEA","LAX","12","15","2021","business",1,0)
         st.balloons()
         #st.dataframe(df)
@@ -154,7 +157,7 @@ if st.sidebar.button('Submit'):
         st.header('Visualization')
         st.write("**Emissions (kg CO2) by Price ($)**")
         c = alt.Chart(df).mark_circle().encode(
-            x='price', y='carbon', size='duration', color='duration', tooltip=['price', 'carbon', 'duration','carrier'])
+            x='price', y='emission', size='duration', color='duration', tooltip=['price', 'emission', 'duration','carrier'])
         st.altair_chart(c, use_container_width=True)
         row2_3, row2_4 = st.columns(2)
         with row2_3:
