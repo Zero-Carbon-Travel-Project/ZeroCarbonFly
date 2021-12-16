@@ -27,6 +27,7 @@ Among all the travel patterns, air travel is the fastest-growing source of carbo
 
 The repository is organized as follows:
 ```
+├── environment.yml
 ├── LICENSE
 ├── README.md
 ├── doc
