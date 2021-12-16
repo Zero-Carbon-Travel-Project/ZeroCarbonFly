@@ -34,11 +34,12 @@ The repository is organized as follows:
 │   ├── Proposal.md
 │   ├── Software Design.md
 │   ├── Tech Review.pdf
-│   ├── Technician.md
-│   ├── User Story.md
+│   ├── Final Presentation.pdf
+│   ├── Carbon Calculation.ipynb
 │   └── assets
 ├── example
-│   └── ZeroCarbonFly_example.ipynb
+│   ├── ZeroCarbonFly_Demo.mp4
+│   └── User Guidance .ipynb
 └── zerocarbonfly
     ├── Website.py
     ├── kayak.py
